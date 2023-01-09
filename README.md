@@ -4,6 +4,7 @@ C++ backend to process HTTP requests
 ## Description
 Why use C++? cause i wanted to.
 
+TODO: more to come here, maybe include some architecture diagram and documentation so people can have a cursory knowledge of whats going on
 
 ## Getting started
 
@@ -46,6 +47,9 @@ curl http://localhost/hi
 ```
 
 And verify that the output is as expected.
+
+## Development setup with VSCode
+TODO: this will help people (myself included) in developing in a docker container and enjoying clangd components.
 
 ## TODO:
 1. Setup CMake to compile a basic project.
