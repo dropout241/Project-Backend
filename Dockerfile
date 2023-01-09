@@ -13,6 +13,8 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
     wget \
 	valgrind \
     libboost-all-dev \
-    libcpp-httplib-dev
+    libcpp-httplib0 \
+    libcpp-httplib-dev \
+    vim
 
 RUN cd ${HOME}

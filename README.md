@@ -6,6 +6,8 @@ Why use C++? cause i wanted to.
 
 
 ## Getting started
+
+### 1. Setup Docker Container
 For reproducibility, building and testing of this part of the application will occur in docker.
 
 If you have not installed the docker engine for your machine, please do so.
@@ -21,6 +23,29 @@ setup script is contained in the repo, to run the build container, simply run:
 
 from the root of the respository. This will give you an interactive shell with the contents of the repo in /root/src, from there you can cd and run cmake commands, test, etc
 
+### 2. Build the Project
+Follow the standard cmake build process:
+
+```
+cd ~/src
+mkdir build
+cmake ..
+make -j 3
+
+./Backend
+```
+
+### 3. Verify
+
+After runnning `./Backend`, you should see `Setting up Http Connections...`
+
+In another terminal, assuming you have access to `curl`, run:
+
+```
+curl http://localhost/hi
+```
+
+And verify that the output is as expected.
 
 ## TODO:
 1. Setup CMake to compile a basic project.
